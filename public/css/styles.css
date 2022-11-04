@@ -1,0 +1,290 @@
+@font-face {
+    font-family: "Fuzzy";
+    src: url("./FuzzyBubbles-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    /* border: black solid 1px; */
+    font-family: "Fuzzy";
+}
+
+/* all 3 viewports */
+.author{
+    font-weight: bold;
+}
+#mail{
+    width: 5%;
+}
+
+#mail-des p, #mail-des img{
+    display: inline;
+}
+body {
+    background-color: antiquewhite;
+    font-family: 'dancing script', cursive;
+}
+
+#banner-nav a:hover, nav .img-link:hover {
+    box-shadow: .2em .2em rgb(215, 191, 191);
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#circle > figure > img{
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    font: italic;
+}
+
+footer img {
+    width: 10%;
+    margin-left: 50%;
+}
+
+#banner-nav a {
+    text-decoration: none;
+    display: inline-block;
+    width: 22%;
+    text-align: center;
+    padding: 1%;
+    background-color: rgb(154, 230, 255);
+}
+
+nav a {
+    text-decoration: none;
+    color:black;   
+    background-color: rgb(154, 230, 255) 
+}
+
+#s{
+    display: none;
+}
+
+
+@media (min-width: 1281px) and (max-width: 1600px){
+    figure{
+        text-align: center;
+        width: 55%;
+        position: relative;
+        top: 0em;
+        left: -.3em;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns:  1fr 3fr;
+        grid-template-rows:  1fr;
+    }
+
+    #circle {
+        border-radius: 50%;
+        width: 50%;
+        height: 0;
+        padding-bottom: 50%;
+        background-color: black;
+        color:white; 
+    }
+
+    #left {
+        grid-column: 1 / 1;
+    }
+
+    nav img {
+        width: 10%;
+    }
+
+    nav a{
+        font-size: 1.5em;
+    }
+
+    .img-link {
+        margin-right: 2em;
+        padding: 7%;
+        margin-top: 1em;
+        background-color: rgb(154, 230, 255);
+    }
+
+    main {
+        display: grid;
+    }
+
+    #banner-img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #banner-nav, #banner img{
+        box-align: center;
+    }
+
+    #subscribe {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #subscribe figure {
+        margin: auto auto;
+    }
+
+    #subscribe #input {
+        margin: auto auto;
+    }
+
+    input[type="text" i] {
+        width: 60%
+    }
+
+    figure > img, figure > figcaption{
+        display: inline;
+    }
+
+    #stories {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .story {
+        margin: 2%;
+        padding: 5%;
+    }
+
+    .story img{
+        width: 90%;
+    }
+
+    footer{
+        grid-column: 1 / 3;
+    }
+
+}
+
+@media (min-width: 701px) and (max-width: 1280px){
+    #left {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    #circle {
+        border-radius: 50%;
+        width: 50%;
+        height: 0;
+        padding-bottom: 50%;
+        background-color: black;
+        color:white; 
+    }
+
+    #circle figcaption{
+        position: relative;
+        top: -1.5em;
+        left: -1.5em;
+        text-align: center;
+    }
+
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    nav a {
+        font-size: 1.5em;
+    }
+
+    .img-link img, .img-link p{
+        display: block;
+
+    }
+
+    #left-content {
+        display: none;
+    }
+
+    #banner {
+        display: grid;
+        grid-template-rows: 5fr 1fr 1fr;
+    }
+
+    #banner-img {
+        width: 100%;
+    }
+    #subscribe {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+    }
+
+    #stories{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .story img{
+        width: 95%;
+    }
+
+    #circle > figure > figcaption{
+        display: none;
+    }
+}
+
+@media (max-width: 700px){
+
+    #circle {
+        border-radius: 50%;
+        width: 20%;
+        height: 0;
+        padding-bottom: 20%;
+        background-color: black;
+        color:white; 
+        margin: 0 auto;
+    }
+
+    #left {
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+    }
+
+    #left-content {
+        display: none;
+    }
+
+    #banner-img {
+        width: 90%;
+        margin: 0 auto ;
+    }
+
+    nav {
+        grid-row: 1 / 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    nav img {
+        display: none;
+    }
+    #subscribe #input{
+        margin: 0 auto;
+    }
+
+    .story img {
+        width: 90%; 
+        margin: 0 auto;
+    }
+    
+    nav a {
+        padding: 5%; 
+    }
+
+    #circle figure {
+        width: 55%;
+    }
+
+    #circle > figure > img {
+        width: 100%;
+    }
+}
